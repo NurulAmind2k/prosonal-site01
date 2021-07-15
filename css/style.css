@@ -1,0 +1,480 @@
+/* ===================================== */
+    /* This is Global ver.... */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+h1{
+    font-size: 2.5rem; 
+}
+a{
+    background-color: black;
+    color: white;
+    font-size: 1.0rem;
+    text-decoration: none;
+    
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* for mobile  */
+[ class*="col-"]{
+    width: 100%;
+}
+    /* This is Global ver. end */
+    /* ========================== */
+
+
+
+
+   /* ===========================  */
+/* navbar  design start here */
+
+.dotted-hr{
+    border: dotted 6px white;
+     border-bottom:none ;
+     margin: 20px auto;
+     width: 80px;
+}
+
+.navbar{
+    background-color: #0c6161;
+    padding: 2% 7%;
+    text-align: center;
+   
+}
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 2rem;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+    background-color: #071818;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: gray;
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navbar  design end here */
+/* ========================== */
+
+
+
+
+/* ================================ */
+/* profile design start here  */
+.profile{
+  
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.img-thumbnail{
+    position: absolute;
+    top: 25px; 
+    right: 60px;
+    transition:transform 2s ;
+}
+.img-thumbnail:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+  
+}
+
+.profile-desc p{
+    color: gray;
+    text-align: center;
+   width: 90%;
+   max-width: 0 auto 20px auto;
+}
+.bottom-img{
+    padding: 20px 0;
+    position: absolute;
+    bottom: 25;
+    left: 60px;
+    transition:transform 2s ;
+}
+ .bottom-img:hover{
+     transform: rotate(-360deg);
+ }
+
+/* profile design end here  */
+/* ======================== */
+
+
+
+/* ========================= */
+/* about me start here  */
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme-image img{
+    border: solid 5px white;
+    border-radius: 50%;
+    height: 200px;
+    width: 180px;
+} 
+
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content:'';
+}
+.about-me p{
+    text-align: center;
+    
+}
+.cv-button{
+     background-color:rgb(141, 17, 17);
+     color: rgb(247, 215, 36);
+     border-radius: 12px;
+     padding: 10px;
+     text-align: center;
+}
+.cv-button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+/* about me end here  */
+/* ==================================================== */
+
+
+
+
+
+
+/* ==================================================== */
+ /* Professional experiences start here  */
+  .professional-experince{
+ padding: 1% 1%;
+
+      
+  }
+  .work-experiance{
+      background-color: #a39e9e;
+      
+      border-radius: 10px;
+      transition: 0.3s;   
+  }
+  .work-experiance:hover{
+      box-shadow: 0 4px 8px 5px black;
+
+  }
+  .card{
+      text-align: center;
+  }
+  .rounded-img{
+      border: 2px solid white;
+     
+      padding: 5px;
+      margin: 20px 0px;
+      border-radius: 50%;
+     
+  }
+  .rounded-img:hover{
+      background-color: aqua;
+      
+  }
+  .card-icon img{
+      margin-top: 20px;
+      width: 100px;
+
+  }
+  .card-title{
+      background-color: #443131;
+      color:white ;
+     margin: 10px 10px;
+     padding: 1px 0px;
+     
+  }
+  .card-title:hover{
+      background-color: cadetblue;
+      color: firebrick;
+      
+  }
+  .card-desc{
+      font-family: tahoma;
+  }
+  strong{
+      color: rgb(24, 24, 196);
+      line-height: .5rem;
+      text-decoration: underline 0px;
+      
+  }
+  
+
+ /* ============================================== */ 
+   .education-background{
+       background-color:#a39e9e;
+       margin: 2px 5px;
+       border-radius: 10px;
+      
+   }
+  .rounded-imge{
+    border: 2px solid white;
+     
+    padding: 15px;
+    margin: 30px 0px;
+    border-radius: 50%; 
+  }
+  .education-background:hover{
+    box-shadow: 0 4px 8px 5px black;
+  }
+
+ /* ============================================== */        
+  .skill-experiance{
+      background-color:#a39e9e ;
+      margin: 2px 1px;
+    
+      border-radius: 10px;
+     text-transform: uppercase;
+
+  }
+  .skill-experiance:hover{
+    box-shadow: 0 4px 8px 5px black;
+  }
+  .skill-experiance{
+      padding-right: 45px;
+  }
+  .card-desc li{
+     list-style: none;
+     font-weight: bolder;
+     margin: 30px 10px;
+     position: relative;
+     text-transform: uppercase;
+  }
+
+  .skill-experiance li::before{
+      content: '';
+      position: absolute;
+      top: calc(100% + 5px);
+      left: 0;
+
+      width: 100%;
+      height: 10px;
+      background-color: rgb(86,86,153,.5);
+      border-radius: 1000px;
+  }
+  .skill-experiance li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+
+    width: 0%;
+    height: 10px;
+    background-color: rgb(86,86,153,1);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: inherit;
+  }
+  .skill-experiance li.html::after{
+      animation-name: html;
+  }
+  @keyframes html{
+      to{
+          width: 90%;
+      }
+  }
+  .skill-experiance li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.skill-experiance li.Bootstap::after{
+    animation-name: Bootstap;
+}
+@keyframes Bootstap{
+    to{
+        width:75%;
+    }
+}
+.skill-experiance li.javascrift::after{
+    animation-name:javascrift;
+}
+@keyframes javascrift{
+    to{
+        width:70%;
+    }
+}
+.skill-experiance li.php::after{
+    animation-name:php;
+}
+@keyframes php{
+    to{
+        width:70%;
+    }
+}
+.skill-experiance li.wordpress::after{
+    animation-name:wordpress;
+}
+@keyframes wordpress{
+    to{
+        width:80%;
+    }
+}
+ .professional-experince::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+ /* Professional experiences  end here  */
+/* ======================================================= */
+
+
+/* ========================================================== */
+/* achievement contact start here */
+.achievement-contact {
+    padding: 1% 2%;
+    background-color: #39a4a6;
+    color: white;
+}
+
+.contact{
+    
+    padding: 1% 7%;
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+
+}
+button{
+    background-color: rgb(226, 220, 218);
+    color: blue;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+}
+button:hover{
+    background-color: aqua;
+    color: rgb(236, 228, 228);
+}
+
+.media-buttons{
+    text-align: center;
+}
+
+.media-buttons .btn{
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 10px;
+  padding: 5px;
+  width: 50px;
+
+}
+
+
+
+.achievement-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* achievement contact start here */
+/* ========================================================= */
+
+
+/* ============================================ */
+/* footer start here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    font-size: .8rem;
+}
+.footer-menu{
+    display: block;
+    margin: 10px 10px;
+    font-size: 1rem;
+
+}
+.footer-menu a{
+
+    background-color: black;
+    margin: 0px 10px;
+}
+.footer-menu a:hover{
+    background-color: aqua;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.footer-desc{
+    text-align: center;
+    margin: 10px;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* footer end here  */
+/* ================================================ */
